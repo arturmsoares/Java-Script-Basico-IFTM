@@ -1,0 +1,1 @@
+document.write(`<p style="font-size:50px; text-align:center; font-weight:bold; color:blue">${parseInt(Math.random() * 10 + 1)}</p>`);

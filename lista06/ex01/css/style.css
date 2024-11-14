@@ -1,0 +1,50 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    /* viewport  height 100% - preenche exatamente a altura visível da janela; */
+}
+
+.boxBoy{
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+/* Para animação: 
+    @keyframes define como a animação denominada shake deve se comportar
+    ao longo do tempo de animação. 
+    No inicio e no fim, ele está na posição original
+
+    em .shake... a propriedade animation faz o uso do @keyframes
+    e define quando e por quanto tempo a animação será executada.
+    sintaxe completa:
+    animation: <nome-da-animação> <duração> <função-de-tempo> <atraso> <número-de-repetições> <modo-de-preenchimento>;
+*/
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+
+.shake {
+    animation: shake 0.5s ease-in-out 1;
+}
+
+@keyframes approve {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+}
+
+.approve {
+    animation: approve 0.5s ease-in-out 1;
+}

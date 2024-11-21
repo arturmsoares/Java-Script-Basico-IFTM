@@ -5,3 +5,5 @@
 - [Lista 03](https://arturmsoares.github.io/Java-Script-Basico-IFTM/lista03/) - Números aleatórios e vetores
 - [Lista 05](https://arturmsoares.github.io/Java-Script-Basico-IFTM/lista05/) - Strings
 - [Lista 06](https://arturmsoares.github.io/Java-Script-Basico-IFTM/lista06/) - Manipuladores de Eventos
+
+

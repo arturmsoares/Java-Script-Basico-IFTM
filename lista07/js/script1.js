@@ -1,6 +1,16 @@
 var txtUser = document.getElementById("txtUser");
 var txtPwd = document.getElementById("txtPwd");
 var btnCadastrar = document.getElementById("btnCadastrar");
+var btnLimpar = document.getElementById("btnLimpar")
+
+// retorno: true (exite o user) ou false (não existe)
+function checkUser(users, username){
+    for(var i = 0; i < users.length; i++){
+        if (username === users[i].username)
+            return true;
+        return false;
+    }
+}
 
 
 btnCadastrar.addEventListener("click", function(){
@@ -24,17 +34,15 @@ btnCadastrar.addEventListener("click", function(){
         }
         else{
             users.push(newUser); //capta o newUser para o vetor de objetos
+            alert("Usuário cadastrado com sucesso!")
             localStorage.setItem("users", JSON.stringify(users)); //transforma novamente para string    
         }
     }
 })
 
-// retorno: true (exite o user) ou false (não existe)
-function checkUser(users, username){
-    for(var i = 0; i < users.length; i++){
-        if (username === users[i].username)
-            return true;
-        return false;
-    }
-}
+
+btnLimpar.addEventListener("click", function(){
+    txtUser.value = "";
+    txtPwd.value = "";
+})
 

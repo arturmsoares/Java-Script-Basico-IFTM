@@ -47,3 +47,13 @@ boy.addEventListener("click", function(){
 boy.addEventListener("mouseout", function(){
     changeBoy(personagem.pensativo);
 })
+
+
+var btnSair = document.getElementById("btnSair");
+
+btnSair.addEventListener("click", function(){
+    var sair = confirm("Deseja realmente sair do jogo?");
+    if(sair){
+        window.location.href = "index.html"
+    }
+})

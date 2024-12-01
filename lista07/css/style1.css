@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding: 20px 20px;
+    letter-spacing: 10px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:lightgrey;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input[type="button"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnLogin {
+    background-color: #28a745;
+}
+
+#btnCadastrar {
+    background-color: #007bff;
+}
+
+#btnLimpar {
+    background-color: orange;
+}
+
+
+input[type="button"]:hover {
+    opacity: 0.9;
+}
+
+footer{
+    text-align: center;
+}

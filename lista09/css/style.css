@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+header h1, header p{
+    padding: 15px;
+}
+
+main {
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+}
+
+div {
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* centralizando elementos dentro da div */
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 85%;
+    margin: 10px auto;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    margin: 10px auto;
+    width: auto; /* ajuste conforme o conteúdo do botão */
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: darkgreen;
+}

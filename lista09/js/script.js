@@ -98,7 +98,7 @@ window.addEventListener("DOMContentLoaded", function () {
         validar(numParenteses, padrao);
     });
 
-    // Email
+    // email
     var email = document.getElementById("email");
     var btnEmail = document.getElementById("btnEmail");
 
@@ -107,21 +107,21 @@ window.addEventListener("DOMContentLoaded", function () {
         validar(email, padrao);
     });
 
-    // Endereço IP
+    // IPv4
     var endereco = document.getElementById("endereco");
     var btnEndereco = document.getElementById("btnEndereco");
 
     btnEndereco.addEventListener("click", function () {
-        var padrao = ""; // Endereço IP
+        var padrao = ""; /^(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])(\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}$/;
         validar(endereco, padrao);
     });
 
-    // Altura de uma pessoa
+    // altura de uma pessoa
     var altura = document.getElementById("altura");
     var btnAltura = document.getElementById("btnAltura");
 
     btnAltura.addEventListener("click", function () {
-        var padrao = ""; // Altura
+        var padrao = /^\d(\.|\,)\d{1,2}$/
         validar(altura, padrao);
     });
 
@@ -130,79 +130,89 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnNome = document.getElementById("btnNome");
 
     btnNome.addEventListener("click", function () {
-        var padrao = ""; // Nome próprio
+        var padrao = /^[A-Z][a-z]{1,}$/
         validar(nome, padrao);
     });
 
-    // Telefone
+    // telefone internacional
     var telefone = document.getElementById("telefone");
     var btnTelefone = document.getElementById("btnTelefone");
 
     btnTelefone.addEventListener("click", function () {
-        var padrao = ""; // Telefone
+        var padrao = /^\+\d{2}\(\d{2}\)\d{4,5}-\d{4}$/
         validar(telefone, padrao);
     });
 
-    // Número de 1 a 100
+    // texto
+    var texto = document.getElementById("texto");
+    var btnTexto = document.getElementById("btnTexto");
+
+    btnTexto.addEventListener("click", function () {
+        var padrao = /^IFTM campus Uberlândia( Centro)?$/
+        validar(texto, padrao);
+    });
+
+
+    // numero de 1 a 100
     var num100 = document.getElementById("num100");
     var btnNum100 = document.getElementById("btnNum100");
 
     btnNum100.addEventListener("click", function () {
-        var padrao = ""; // Número de 1 a 100
+        var padrao = /^([1-9]\d?|100)$/
         validar(num100, padrao);
     });
 
-    // Placa de carro
+    // placa de carro
     var placa = document.getElementById("placa");
     var btnPlaca = document.getElementById("btnPlaca");
 
     btnPlaca.addEventListener("click", function () {
-        var padrao = ""; // Placa de carro
+        var padrao = ""; 
         validar(placa, padrao);
     });
 
-    // Palavras com vogais e letras específicas
+    // palavras com vogais
     var palavras = document.getElementById("palavras");
     var btnPalavras = document.getElementById("btnPalavras");
 
     btnPalavras.addEventListener("click", function () {
-        var padrao = ""; // Palavras com vogais e letras específicas
+        var padrao = ""; 
         validar(palavras, padrao);
     });
 
-    // Faturamento de empresa
+    // faturamento de empresa
     var faturamento = document.getElementById("faturamento");
     var btnFaturamento = document.getElementById("btnFaturamento");
 
     btnFaturamento.addEventListener("click", function () {
-        var padrao = ""; // Faturamento de empresa
+        var padrao = ""; 
         validar(faturamento, padrao);
     });
 
-    // Número de matrícula
+    // número de matrícula
     var matricula = document.getElementById("matricula");
     var btnMatricula = document.getElementById("btnMatricula");
 
     btnMatricula.addEventListener("click", function () {
-        var padrao = ""; // Número de matrícula
+        var padrao = ""; 
         validar(matricula, padrao);
     });
 
-    // Número de matrícula (formato 1)
+    // número de matrícula (formato 1)
     var matriculaFormat1 = document.getElementById("matriculaFormat1");
     var btnMatriculaFormat1 = document.getElementById("btnMatriculaFormat1");
 
     btnMatriculaFormat1.addEventListener("click", function () {
-        var padrao = ""; // Número de matrícula (formato 1)
+        var padrao = ""; 
         validar(matriculaFormat1, padrao);
     });
 
-    // Número de matrícula (formato 2)
+    // número de matrícula (formato 2)
     var matriculaFormat2 = document.getElementById("matriculaFormat2");
     var btnMatriculaFormat2 = document.getElementById("btnMatriculaFormat2");
 
     btnMatriculaFormat2.addEventListener("click", function () {
-        var padrao = ""; // Número de matrícula (formato 2)
+        var padrao = ""; 
         validar(matriculaFormat2, padrao);
     });
 

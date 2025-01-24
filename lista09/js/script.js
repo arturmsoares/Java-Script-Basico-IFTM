@@ -167,7 +167,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnPlaca = document.getElementById("btnPlaca");
 
     btnPlaca.addEventListener("click", function () {
-        var padrao = ""; 
+        var padrao =/^[A-Z]{3}\d[A-Z]\d{3}$/; 
         validar(placa, padrao);
     });
 
@@ -176,7 +176,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnPalavras = document.getElementById("btnPalavras");
 
     btnPalavras.addEventListener("click", function () {
-        var padrao = ""; 
+        var padrao = /^[bcdaeiou]{2,}$/; 
         validar(palavras, padrao);
     });
 
@@ -185,7 +185,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnFaturamento = document.getElementById("btnFaturamento");
 
     btnFaturamento.addEventListener("click", function () {
-        var padrao = ""; 
+        var padrao = /^R\$\d{1,3}(\.\d{3})*,\d{2}$/; 
         validar(faturamento, padrao);
     });
 
@@ -194,7 +194,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnMatricula = document.getElementById("btnMatricula");
 
     btnMatricula.addEventListener("click", function () {
-        var padrao = ""; 
+        var padrao = /^IFTM-\d{3}\/\d{3}-\w{2}$/i; 
         validar(matricula, padrao);
     });
 
@@ -203,7 +203,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnMatriculaFormat1 = document.getElementById("btnMatriculaFormat1");
 
     btnMatriculaFormat1.addEventListener("click", function () {
-        var padrao = ""; 
+        var padrao = /^MT-\d{2}\.\d{3}-(IFTM|iftm)$/; 
         validar(matriculaFormat1, padrao);
     });
 
@@ -212,36 +212,10 @@ window.addEventListener("DOMContentLoaded", function () {
     var btnMatriculaFormat2 = document.getElementById("btnMatriculaFormat2");
 
     btnMatriculaFormat2.addEventListener("click", function () {
-        var padrao = ""; 
+        var padrao = /^((M\s?T|m\s?t)-\d{2}\.\d{3}-(i\s?f\s?t\s?m|I\s?F\s?T\s?M))\s(Uberlândia Centro|Uberlândia)$/; 
         validar(matriculaFormat2, padrao);
     });
 
 
-
-
-
 })
 
-
-// var padrao = /\d/; validar se tem digito em qq lugar
-// var padrao = /^\d/; valida se há nro no inicio
-// var padrao = /\d$/; valida se há nro no fim
-// var padrao = /^\d$/; valida se há exatamento um nro
-// var padrao = /^\d{5}-\d{4-5}$/; // valida nro telefone
-// var padrao = /^\(\d{3}\)\d{4,5}-\d{4}$/; //valida nro telefone com (ddd)
-// var padrao = /^\d{2}\/\d{2}\/\d{4}$/; valida data nascimento
-// var padrao = /^\d{2}\.\d{3}-\d{3}$/; valida cep;
-// var padrao = /^[IFTMiftm]{4}-\d{4,6}-(TSPI|LCO|MKT):\d[A-Z]$/ pode escolher 4 digitos dentro do colchete;
-// var padrao = /^(I|i)(F|f)(T|t)(M|m)-\d{4,6}-(TSPI|LCO|MKT):\d[A-Z]$/ digitar IFTM maiusculo ou minusculo
-// var padrao=/^[MFmf]$/
-// var padrao=/^(M|F|Masculino|Feminino)$/
-// var padrao=/^(M|F|Masculino|Feminino)$/i; ignora o sensitive case;
-// var padrao = /^IFTM\s{1,3}TSPI$/ //até 3 espaços
-// var padrao = /^IFTM\s{1,}TSPI$/ //no minimo 1 espaço
-// var padrao = /^IFTM\s?TSPI$/ //no minimo 1 espaço
-// var padrao = /^[abcde]{2,}$/
-// var padrao = /^[0-9a-f]{1,}$/i // validar hexadecimal
-// var padrao = /^[0-9a-f]+$/i // validar hexadecimal
-// var padrao = /[^*+-]+$/ // tudo menos os elementos dentro do cochete após o ^
-// var padrao = /^\d{2}:\d{2}$/ validar hora: dois pontos não é anotação de regex
-// var padrao = /^[A-z]{4,}\d{2,4}\W{2}$/ 

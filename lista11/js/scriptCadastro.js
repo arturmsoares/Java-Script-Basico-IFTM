@@ -36,10 +36,10 @@ btnCadastrar.addEventListener("click", function () {
     if (checkUser(users, newUser.username)) {
         alertWifi("Usuário existente. Tente outro", false, 5, "img/logo.png", 30, "");
     } else {
+        alertWifi("Usuário cadastrado com sucesso!", false, 5, "img/logo.png", 30, "");
         users.push(newUser);
         localStorage.setItem("users", JSON.stringify(users)); // Salva corretamente a lista de usuários
         alertSound.play();
-        alertWifi("Usuário cadastrado com sucesso!", false, 5, "img/logo.png", 30, "");
     }
 });
 

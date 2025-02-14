@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É par!</title>
+    <link rel="stylesheet" href="css/styleJogo.css">
+    <link rel="stylesheet" href="css/jAlertWifi.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="nivel">
+            <label for="nivel">Nível:</label>
+            <select id="nivel">
+                <option value="selecione" selected>Selecione</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+        </div>
+        <div class="botoes">
+            <button id="iniciar"><img src="img/play.png" alt="Iniciar"></button>
+            <button id="pausar" disabled><img src="img/pause.png" alt="Pausar"></button>
+            <button id="parar" disabled><img src="img/stop.png" alt="Parar"></button>
+            <button id="sair"><img src="img/home.png" alt="sair"></button>
+        </div>
+        <div class="tempo">Tempo: <span id="cronometro">00:00</span></div>
+
+    </header>
+
+    <main>
+        <div class="numero"><span id="numAleatorio">-</span></div>
+    </main>
+
+    <footer>
+        <div class="status">
+            <div class="acertos">Acertos: <span id="acertos">0</span> (<span id="percentualAcertos">00.0%</span>)</div>
+            <div class="erros">Erros: <span id="erros">0</span></div>
+            <div class="pares">Pares sorteados: <span id="pares">0</span></div>
+        </div>
+    </footer>
+
+    <script src="js/scriptJogo.js"></script>
+    <script src="js/jAlertWifi.js"></script>
+    <audio id="alertSound" src="sons/alert.mp3"></audio>
+    <audio id="acertoSound" src="sons/acertos.mp3"></audio>
+    <audio id="erroSound" src="sons/erros.mp3"></audio>
+    <audio id="iniciarSound" src="sons/iniciar.mp3"></audio>
+    <audio id="pausarSound" src="sons/pausar.mp3"></audio>
+    <audio id="gameSound" src="sons/game.mp3"></audio>
+
+</body>
+</html>

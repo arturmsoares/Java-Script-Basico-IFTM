@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+
+* {
+    font-family: "Press Start 2P", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FBF3DC;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #0C0429;
+    color: rgb(255, 174, 0);
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+header div{
+    margin: 8px 0px;
+}
+
+
+.nivel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.nivel select {
+    padding: 5px;
+    background-color: rgb(241, 241, 120);
+    color: black;
+    
+}
+
+.nivel select option{
+    font-size: 10px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botoes button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes button img {
+    width: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.botoes button:hover img {
+    transform: scale(1.1);
+}
+
+.botoes button:disabled img {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;    
+}
+
+.numero {
+    font-family:cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color: #0C0429;
+    text-shadow: 2px 2px 5px #4DF3F3;
+}
+
+
+.par {
+    color: green;
+}
+
+.impar {
+    color: red;
+}
+
+/* footer {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    header, footer {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    header div{
+        width: 33%;
+        justify-content: center;
+    }
+    
+    .numero {
+        font-size: 200px;
+    }
+    
+    .nivel select {
+        padding: 8px;
+    }
+    
+    .botoes button img {
+        width: 40px;
+    }
+    
+    .status {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+

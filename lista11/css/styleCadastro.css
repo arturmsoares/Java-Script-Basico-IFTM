@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+
+* {
+    font-family: "Press Start 2P", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FBF3DC;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #0C0429;
+    text-align: center;
+}
+
+header img {
+    animation: girar 3s linear infinite;
+    width: 200px;
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cadastro {
+    background-color: #0C0429;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #F89B3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.cadastro h2 {
+    text-align: center;
+}
+
+.cadastro label {
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(255, 174, 0);
+}
+
+.cadastro input[type="text"],
+.cadastro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.botoes input {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+
+.botoes input:hover {
+    background-color: #d63b00;
+}
+
+a {
+    color: #4DF3F3;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #0C0429;
+    color: rgb(255, 174, 0);
+    font-size: 12px;
+}
+
+/* Estilos para desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        justify-content: center;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .cadastro {
+        width: 300px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .botoes input {
+        width: auto;
+        padding: 15px 20px;
+    }
+}

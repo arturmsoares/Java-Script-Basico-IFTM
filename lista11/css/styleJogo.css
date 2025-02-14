@@ -10,7 +10,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     background-color: #FBF3DC;
     color: #ffffff;
     justify-content: space-between;
@@ -112,13 +112,11 @@ main {
     color: red;
 }
 
-/* footer {
-    font-size: 12px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+footer {
+    position: fixed; /* Garante que o footer esteja sempre visível */
+    bottom: 0;
+    left: 0;
+}
 
 .status {
     display: flex;
